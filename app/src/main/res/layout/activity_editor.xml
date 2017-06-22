@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="Open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/openImageButton" />
+
+    <Button
+        android:text="take"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/openImageButton"
+        android:layout_toEndOf="@+id/openImageButton"
+        android:id="@+id/takeImageButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/takeImageButton"
+        android:layout_toEndOf="@+id/takeImageButton"
+        android:id="@+id/addSaveButton"
+        android:text="A/S" />
+
+    <Button
+        android:text="L/E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addSaveButton"
+        android:layout_toEndOf="@+id/addSaveButton"
+        android:id="@+id/loadEditButton" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/openImageButton"
+        android:id="@+id/imageView"/>
+
+    <!--
+    <android.widget.ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/openPhotoButton1" />-->
+
+    <FrameLayout
+        android:id="@+id/drawingViewFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/openImageButton">
+
+    </FrameLayout>
+
+</RelativeLayout>
